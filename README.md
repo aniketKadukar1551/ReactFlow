@@ -19,7 +19,7 @@ Follow these steps to run the project on your local machine after cloning the re
 
 ```bash
 git clone https://github.com/aniketKadukar1551/ReactFlow.git
-cd react-flow-project
+cd ReactFlow 
 ```
 
 ### 2. Make sure you have Node.js installed. Then run:
