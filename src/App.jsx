@@ -1,14 +1,22 @@
-import AppRouter from "./AppRouter"
+import { Provider } from "react-redux";
+import { ReactFlowProvider } from "@xyflow/react";
 
-import "./styles/App.css"
+import AppRouter from "./AppRouter";
+
+import "./styles/App.css";
+
+import appStore from "./Store/appStore";
 
 function App() {
   return (
     <div id="app">
-      <AppRouter/>
+      <ReactFlowProvider>
+        <Provider store={appStore}>
+          <AppRouter />
+        </Provider>
+      </ReactFlowProvider>
     </div>
-      
-  )
+  );
 }
 
-export default App
+export default App;
